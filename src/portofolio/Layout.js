@@ -21,8 +21,12 @@ const Layout = () => {
         <li>
           <Link to="/bio" className='layout-link'>Bio</Link>
         </li>
+       
         <li>
           <Link to="/shop" className='layout-link'>Shop</Link>
+        </li>
+        <li>
+          <Link to="/remote-shop" className='layout-link'>Remote shop</Link>
         </li>
     </ul>
     </nav>

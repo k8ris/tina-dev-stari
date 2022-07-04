@@ -28,6 +28,7 @@ export default function App() {
           <Route path="ceramics" element={<Ceramics images={artPeaces} />} />
           <Route path="bio" element={<Bio images={artPeaces}/>} />
           <Route path="shop" element={<ShopLayout/>} />
+          <Route path="remote-shop" element={<Shop/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
