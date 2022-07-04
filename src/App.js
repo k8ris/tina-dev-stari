@@ -1,20 +1,20 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Paintings from "./pages/Paintings";
-import S180x120 from "./pages/S180x120";
-import S120x100 from "./pages/S120x100";
-import S140x90 from "./pages/S140x90";
-import WorkOnPaper from "./pages/WorkOnPaper";
-import Ceramics from "./pages/Ceramics";
-import Bio from "./pages/Bio";
-import Shop from "./pages/Shop";
-import Layout from "./pages/Layout";
-import NoPage from "./pages/NoPage";
-
+import Home from "./portofolio/Home";
+import Paintings from "./portofolio/Paintings";
+import S180x120 from "./portofolio/S180x120";
+import S120x100 from "./portofolio/S120x100";
+import S140x90 from "./portofolio/S140x90";
+import WorkOnPaper from "./portofolio/WorkOnPaper";
+import Ceramics from "./portofolio/Ceramics";
+import Bio from "./portofolio/Bio";
+import Shop from "./portofolio/Shop";
+import Layout from "./portofolio/Layout";
+import NoPage from "./portofolio/NoPage";
+import ShopLayout from "./shop/ShopLayout";
 
 export default function App() {
-  const artPeaces = require('./pages/art.js')();
+  const artPeaces = require('./portofolio/art.js')();
   return (
     <BrowserRouter>
       <Routes>
@@ -27,7 +27,7 @@ export default function App() {
           <Route path="work-on-paper" element={<WorkOnPaper images={artPeaces} />} />
           <Route path="ceramics" element={<Ceramics images={artPeaces} />} />
           <Route path="bio" element={<Bio images={artPeaces}/>} />
-          <Route path="shop" element={<Shop />} />
+          <Route path="shop" element={<ShopLayout/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
