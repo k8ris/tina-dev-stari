@@ -1,0 +1,37 @@
+module.exports = () => { 
+  const art=[
+    { id:'1',type: 'painting',size: '180x120',title: 'Spring1', year: '2020', technique: 'Acrilic',location: './img/img1.png'},
+    { id:'2',type: 'painting',size: '180x120',title: 'Spring2', year: '2021', technique: 'Acrilic',location: './img/img2.png'},
+    { id:'3',type: 'painting',size: '140x90',title: 'Fanovi kraljice gabora', year: '2022', technique: 'Oil',location: './img/img6.png'},
+    { id:'4',type: 'painting',size: '140x90',title: 'Ljubavnici', year: '2020', technique: 'Oil',location: './img/img9.png'},
+    { id:'6',type: 'painting',size: '140x90',title: 'Ljubavnici', year: '2020', technique: 'Oil',location: './img/img7.png'},
+    { id:'7',type: 'painting',size: '140x90',title: 'Ljubavnici', year: '2020', technique: 'Oil',location: './img/img8.png'},
+    { id:'8',type: 'painting',size: '140x90',title: 'Ljubavnici', year: '2020', technique: 'Oil',location: './img/img10.png'},
+    { id:'9',type: 'painting',size: '180x120',title: 'Spring2', year: '2021', technique: 'Acrilic',location: './img/img10-01.png'},
+    { id:'10',type: 'painting',size: '120x100',title: 'Spring3', year: '2022', technique: 'Acrilic',location: './img/img11.png'},
+    { id:'11',type: 'painting',size: '120x100',title: 'Spring3', year: '2022', technique: 'Acrilic',location: './img/img12.png'},
+    { id:'12',type: 'painting',size: '120x100',title: 'Spring3', year: '2022', technique: 'Acrilic',location: './img/img13.png'},
+    { id:'13',type: 'painting',size: '120x100',title: 'Spring3', year: '2022', technique: 'Acrilic',location: './img/img14.png'},
+    { id:'14',type: 'painting',size: '120x100',title: 'Spring3', year: '2022', technique: 'Acrilic',location: './img/img15.png'},
+    { id:'15',type: 'painting',size: '120x100',title: 'Spring3', year: '2022', technique: 'Acrilic',location: './img/img16.png'},
+    { id:'16',type: 'painting',size: '120x100',title: 'Spring3', year: '2022', technique: 'Acrilic',location: './img/img17.png'},
+    { id:'17',type: 'painting',size: '120x100',title: 'Spring3', year: '2022', technique: 'Acrilic',location: './img/img18.png'},
+    { id:'18',type: 'painting',size: '120x100',title: 'Spring3', year: '2022', technique: 'Acrilic',location: './img/img19.png'},
+    { id:'19',type: 'painting',size: '120x100',title: 'Spring3', year: '2022', technique: 'Acrilic',location: './img/img3.png'},
+    { id:'20',type: 'painting',size: '120x100',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img4.png'},
+    { id:'21',type: 'painting',size: '120x100', title: 'Spring5', year: '2024', technique: 'Acrilic',location: './img/img5.png'},
+    { id:'22',type: 'wop',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img33.jpeg'},
+    { id:'23',type: 'wop',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img34.jpeg'},
+    { id:'24',type: 'wop',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img35.jpeg'},
+    { id:'25',type: 'wop',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img37.jpeg'},
+    { id:'26',type: 'wop',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img38.jpeg'},
+    { id:'27',type: 'wop',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img39.jpeg'},
+    { id:'28',type: 'ceramics',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img40.jpg'},
+    { id:'29',type: 'ceramics',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img41.jpg'},
+    { id:'30',type: 'ceramics',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img42.jpg'},
+    { id:'31',type: 'ceramics',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img43.jpg'},
+    { id:'32',type: 'ceramics',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img44.jpg'},
+    { id:'33',type: 'bio-image',location: './img/bio-image.jpg'}
+  ]
+  return art;
+}

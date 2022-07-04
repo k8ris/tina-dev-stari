@@ -1,0 +1,45 @@
+body {
+    padding-bottom: 50px;
+}
+nav {
+    margin-bottom: 5%;
+    
+}
+.layout-link{
+    color: black;
+    font-size: small;
+    padding: 0.5em;
+    text-decoration: none;
+}
+.layout-link:hover{
+    text-decoration: underline;
+    color: rgba(94, 55, 27, 0.73);
+}
+.home-img{
+    border: 1px solid rgba(96, 175, 171, 0.788);
+}
+.title-paintings{
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-family: cursive;
+    font-size: small;
+    color:  rgb(48, 41, 31);
+}
+.container-paintings:hover{
+    opacity:0.8;
+}
+.title{
+    text-align: left;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-size: small;
+    color:  rgb(48, 41, 31);
+}
+.bioPage{
+  background-image: url("/public/img/bio-image.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
