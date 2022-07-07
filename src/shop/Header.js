@@ -1,30 +1,30 @@
-import Dropdown from 'react-bootstrap/Dropdown';
+import { Navbar,Nav,Container,Offcanvas} from 'react-bootstrap';
+
 
 export default function Header () {
     return (
-    <div style={{ display: 'block', 
-        width: 700, 
-        padding: 30 }} className='container'>
-    <Dropdown>
-      <Dropdown.Toggle variant="success">Menu</Dropdown.Toggle>
-      <Dropdown.Menu>
-      <Dropdown.Item href="#">clothes woman</Dropdown.Item>
-      <Dropdown.Item href="#">clothes man </Dropdown.Item>
-      <Dropdown.Item href="#">ceramics</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
-    </div>
+        <Navbar expand={false} className="mb-3">
+         <Container fluid>
+              <Nav.Link href="#action1" className='text-dark'>BAG</Nav.Link>
+              <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${false}`} />
+            <Navbar.Offcanvas
+            id={`offcanvasNavbar-expand-${false}`}
+            aria-labelledby={`offcanvasNavbarLabel-expand-${false}`}
+            placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${false}`}> Shop </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+              <Nav className="justify-content-end flex-grow-1 pe-3 ">
+                <Nav.Link className='text-black-50' href="#action1">clothes woman</Nav.Link>
+                <Nav.Link className='text-black-50' href="#action2">clothes man</Nav.Link>
+                <Nav.Link className='text-black-50' href="#action2">ceramics</Nav.Link>
+                <Nav.Link className='text-black-50' shref="#action2">work on paper</Nav.Link>
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
+        </Container>
+      </Navbar>
 );
     };
-    // <>
-    // <h1>Naslov,meni,korpa</h1>
-    // <div className="dropdown">
-    // <button className="btn-link link-dark dropdown-toggle" type="button" data-bs-toggle ="dropdown">MENU</button>
-    // <ul className="dropdown-menu">
-    //   <li><Link to=''>HTML</Link></li>
-    //   <li><Link to=''>CSS</Link></li>
-    //   <li><Link to=''>JavaScript</Link></li>
-    // </ul>
-    // </div>
-    // </>
-    // )
