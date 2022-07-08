@@ -29,7 +29,7 @@ module.exports = () => {
     { id:'30',type: 'ceramics',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img42.jpg'},
     { id:'31',type: 'ceramics',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img43.jpg'},
     { id:'32',type: 'ceramics',title: 'Spring4', year: '2023', technique: 'Acrilic',location: './img/img44.jpg'},
-    { id:'33',type: 'bio-image',location: './img/bio-image.jpg'}
+    { id:'33',type: 'bio-image',location: '../public/img/bio-image.jpg'}
   ]
   return art;
 }

@@ -14,7 +14,7 @@ import NoPage from "./portofolio/NoPage";
 import ShopLayout from "./shop/ShopLayout";
 
 export default function App() {
-  const artPeaces = require('./portofolio/art.js')();
+  const artPeaces = require('./portofolio/art')();
   return (
     <BrowserRouter>
       <Routes>

@@ -5,7 +5,8 @@ export default function Header () {
     return (
         <Navbar expand={false} className="mb-3">
          <Container fluid>
-              <Nav.Link href="#action1" className='text-dark'>BAG</Nav.Link>
+           {/* Navbar.text for bag count */}
+              <Nav.Link href="#action1" className='text-dark'>BAG <Navbar.Text>0</Navbar.Text></Nav.Link>
               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${false}`} />
             <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${false}`}
