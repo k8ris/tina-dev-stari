@@ -1,12 +1,14 @@
-import Products from "./Products";
-import Header from "./Header";
+import Home from "./pages/Home";
+import Header from "./components/Header";
+import Products from "./components/Products";
 
 
 export default function ShopLayout  ()  {
+    const shopPieces = require('./shopPieces')();
     return (
     <div>
     <Header />
-    <Products />
+    <Products productsImage= {shopPieces}/>
     </div>
     )
      

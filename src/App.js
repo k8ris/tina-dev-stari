@@ -16,6 +16,7 @@ import ShopLayout from "./shop/ShopLayout";
 export default function App() {
   const artPeaces = require('./portofolio/art')();
   artPeaces.map(e => e.location = './img400/' + e.location);
+  
                                  
 
   return (
