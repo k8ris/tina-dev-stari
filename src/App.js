@@ -15,6 +15,9 @@ import ShopLayout from "./shop/ShopLayout";
 
 export default function App() {
   const artPeaces = require('./portofolio/art')();
+  artPeaces.map(e => e.location = './img400/' + e.location);
+                                 
+
   return (
     <BrowserRouter>
       <Routes>
@@ -28,7 +31,7 @@ export default function App() {
           <Route path="ceramics" element={<Ceramics images={artPeaces} />} />
           <Route path="bio" element={<Bio images={artPeaces}/>} />
           <Route path="shop" element={<ShopLayout/>} />
-          <Route path="remote-shop" element={<Shop/>} />
+          <Route path="remote-shop" element={<Shop />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

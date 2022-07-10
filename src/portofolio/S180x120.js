@@ -10,7 +10,7 @@ export default function S180x120 ({images}) {
         {/* <img className='img-fluid' src={image.location}  alt='' /> */}
          <ModalImage
            small={image.location}
-           large={image.location}
+           large={image.locationFullSize}
            alt={image.title}
          />
         <p className='title'>{image.title} {image.year} {image.technique}</p>
