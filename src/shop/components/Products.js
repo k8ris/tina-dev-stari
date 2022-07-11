@@ -1,19 +1,19 @@
 import{ Card,Container,Row,Col }from 'react-bootstrap';
 
-export default function Products ({productsImage}) {
-  console.log(productsImage);
+export default function Products ({products}) {
+  
   return (
   <Container fluid>
     <Row className="justify-content-md-center">
-      { productsImage.map( e => 
+      { products.map( product => 
         <Col md='auto'>
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src={e.location} />
+              <Card.Img variant="top" src={product.location} />
               <Card.Body>
               <Card.Text>
                 <pre>
-                {e.typeClothe}{'\n'}
-                price:{e.price}rsd
+                {product.typeClothe}{'\n'}
+                price:{product.price}rsd
                 </pre>
               </Card.Text>
               </Card.Body>

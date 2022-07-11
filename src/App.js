@@ -8,10 +8,9 @@ import S140x90 from "./portofolio/S140x90";
 import WorkOnPaper from "./portofolio/WorkOnPaper";
 import Ceramics from "./portofolio/Ceramics";
 import Bio from "./portofolio/Bio";
-import Shop from "./portofolio/Shop";
-import Layout from "./portofolio/Layout";
+import Nav from "./portofolio/Nav";
 import NoPage from "./portofolio/NoPage";
-import ShopLayout from "./shop/ShopLayout";
+import Shop from "./shop/Shop";
 
 export default function App() {
   const artPeaces = require('./portofolio/art')();
@@ -22,7 +21,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Nav />}>
           <Route index element={<Home images={artPeaces[Math.floor(Math.random()*artPeaces.length)].location} />}/>
           <Route path="paintings" element={<Paintings images={artPeaces}/>} />
           <Route path="180x120" element={<S180x120 images={artPeaces} />} />
@@ -31,8 +30,7 @@ export default function App() {
           <Route path="work-on-paper" element={<WorkOnPaper images={artPeaces} />} />
           <Route path="ceramics" element={<Ceramics images={artPeaces} />} />
           <Route path="bio" element={<Bio images={artPeaces}/>} />
-          <Route path="shop" element={<ShopLayout/>} />
-          <Route path="remote-shop" element={<Shop />} />
+          <Route path="shop" element={<Shop/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

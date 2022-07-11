@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 
-const Layout = () => {
+const Nav = () => {
   return (
     <div>
     <h5 className="text-center mt-4 mb-4">Tina Danilovic</h5>
@@ -12,11 +12,10 @@ const Layout = () => {
         <li><Link to="/ceramics" className='layout-link'>Ceramics</Link> </li>
         <li><Link to="/bio" className='layout-link'>Bio</Link></li>
         <li><Link to="/shop" className='layout-link'>Shop</Link></li>
-        <li><Link to="/remote-shop" className='layout-link'>Remote shop</Link></li>
     </ul>
     </nav>
     <Outlet />
     </div>
   )
 };
-export default Layout;
+export default Nav;

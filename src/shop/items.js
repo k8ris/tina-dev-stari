@@ -1,5 +1,5 @@
 module.exports = () => { 
-    const shopPieces=[
+    const items=[
       { id:'1',type: 'clothe',size: 's',gender: 'man', typeClothe: 'shirt',price:'3000',location: './imgShop/img1.png'},
       { id:'2',type: 'clothe',size: 's',gender: 'man', typeClothe: 'cropeTop',price:'3000',location: './imgShop/img2.png'},
       { id:'3',type: 'clothe',size: 'm',gender: 'woman', typeClothe: 'sweatshirt',price:'3000',location: './imgShop/img6.png'},
@@ -30,5 +30,5 @@ module.exports = () => {
       { id:'31',type: 'ceramics',name: 'Spring4',price:'3000',location: './imgShop/img43.jpg'},
       { id:'32',type: 'ceramics',name: 'Spring4',price:'3000',location: './imgShop/img44.jpg'},
     ]
-    return shopPieces;
+    return items;
   }
