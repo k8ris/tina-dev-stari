@@ -1,14 +1,17 @@
-import React from 'react';
+import React,{Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import App from './App.js';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const App = React.lazy(() => import('./App'));
+
 root.render(
   <React.StrictMode>
-    <App/>
+    <Suspense >
+    <App />
+    </Suspense>
   </React.StrictMode>
 );
 

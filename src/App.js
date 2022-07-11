@@ -13,23 +13,23 @@ import NoPage from "./portofolio/NoPage";
 import Shop from "./shop/Shop";
 
 export default function App() {
-  const artPeaces = require('./portofolio/art')();
-  artPeaces.map(e => e.location = './img400/' + e.location);
-  
-                                 
+  const artPieces = require('./portofolio/art')();
+  artPieces.map(img => img.location ="./img/"+img.location);
+  const homeImage = artPieces[Math.floor(Math.random()*artPieces.length)];
+  console.log(homeImage);
 
   return (
-    <BrowserRouter>
-      <Routes>
+      <BrowserRouter basename={window.location.pathname || ''}>     
+       <Routes>
         <Route path="/" element={<Nav />}>
-          <Route index element={<Home images={artPeaces[Math.floor(Math.random()*artPeaces.length)].location} />}/>
-          <Route path="paintings" element={<Paintings images={artPeaces}/>} />
-          <Route path="180x120" element={<S180x120 images={artPeaces} />} />
-          <Route path="120x100" element={<S120x100 images={artPeaces} />} />
-          <Route path="140x90" element={<S140x90 images={artPeaces} />} />
-          <Route path="work-on-paper" element={<WorkOnPaper images={artPeaces} />} />
-          <Route path="ceramics" element={<Ceramics images={artPeaces} />} />
-          <Route path="bio" element={<Bio images={artPeaces}/>} />
+          <Route index element={<Home images={homeImage.location} />}/>
+          <Route path="paintings" element={<Paintings images={artPieces}/>} />
+          <Route path="180x120" element={<S180x120 images={artPieces} />} />
+          <Route path="120x100" element={<S120x100 images={artPieces} />} />
+          <Route path="140x90" element={<S140x90 images={artPieces} />} />
+          <Route path="work-on-paper" element={<WorkOnPaper images={artPieces} />} />
+          <Route path="ceramics" element={<Ceramics images={artPieces} />} />
+          <Route path="bio" element={<Bio images={artPieces}/>} />
           <Route path="shop" element={<Shop/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
