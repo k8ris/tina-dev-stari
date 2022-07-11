@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tina-dev/static/css/main.4885e556.css",
+    "main.js": "/tina-dev/static/js/main.dfe5e7e7.js",
+    "static/js/787.92acc52e.chunk.js": "/tina-dev/static/js/787.92acc52e.chunk.js",
+    "static/media/bio-image.jpg": "/tina-dev/static/media/bio-image.de41afb313065fe64939.jpg",
+    "index.html": "/tina-dev/index.html",
+    "main.4885e556.css.map": "/tina-dev/static/css/main.4885e556.css.map",
+    "main.dfe5e7e7.js.map": "/tina-dev/static/js/main.dfe5e7e7.js.map",
+    "787.92acc52e.chunk.js.map": "/tina-dev/static/js/787.92acc52e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4885e556.css",
+    "static/js/main.dfe5e7e7.js"
+  ]
+}
