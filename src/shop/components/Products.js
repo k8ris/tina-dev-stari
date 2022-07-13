@@ -7,19 +7,20 @@ export default function Products ({products}) {
     <Row className="justify-content-md-center">
       { products.map( product => 
         <Col md='auto'>
-            <Card style={{ width: '18rem' }} >
+            <Card style={{ width: '18rem' }} className="card">
               <Card.Img  key={product.id}  variant="top" src={product.location} />
               <Card.Body>
               <Card.Text>
                 <pre>
                 {product.typeClothe}{'\n'}
-                price:{product.price}rsd
+                {product.price}rsd
                 </pre>
               </Card.Text>
               </Card.Body>
             </Card>
         </Col>
-      )};
+      )
+      }
     </Row>
   </Container>          
   )

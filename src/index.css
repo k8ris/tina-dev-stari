@@ -43,3 +43,6 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.card {
+    border: 0px;
+}

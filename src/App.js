@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Home from "./portofolio/Home";
 import Paintings from "./portofolio/Paintings";
 import S180x120 from "./portofolio/S180x120";
@@ -16,12 +15,11 @@ export default function App() {
   const artPieces = require('./portofolio/art')();
   artPieces.map(img => img.location ="./img/"+img.location );
   artPieces.map(img => img.locationFullSize = "./img/"+img.locationFullSize);
-  console.log(window.location.pathname)
   const homeImage = artPieces[Math.floor(Math.random()*artPieces.length)];
 
   return (
-      <BrowserRouter basename={window.location.pathname || ''}>     
-       <Routes>
+    <BrowserRouter basename={window.location.pathname || ''}>     
+      <Routes>
         <Route path="/" element={<Nav />}>
           <Route index element={<Home images={homeImage.location} />}/>
           <Route path="paintings" element={<Paintings images={artPieces}/>} />
