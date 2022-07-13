@@ -6,16 +6,29 @@ export default function Products ({products}) {
   <Container fluid>
     <Row className="justify-content-md-center">
       { products.map( product => 
-        <Col md='auto'>
+        <Col md='auto' key={product.id} >
             <Card style={{ width: '18rem' }} className="card">
-              <Card.Img  key={product.id}  variant="top" src={product.location} />
+              <Card.Img variant="top" src={product.location} />
               <Card.Body>
               <Card.Text>
-                <pre>
+
                 {product.typeClothe}{'\n'}
                 {product.price}rsd
-                </pre>
+                
               </Card.Text>
+              <div>
+                <form>
+                <label>
+                size:
+                <select>
+                  <option value="grapefruit">s</option>
+                  <option value="lime">m</option>
+                  <option value="coconut">l</option>
+                </select>
+                </label>
+                  <input type="submit" value="purchase" />
+                </form>
+              </div>
               </Card.Body>
             </Card>
         </Col>
