@@ -14,9 +14,10 @@ import Shop from "./shop/Shop";
 
 export default function App() {
   const artPieces = require('./portofolio/art')();
-  artPieces.map(img => img.location ="./img/"+img.location);
+  artPieces.map(img => img.location ="./img/"+img.location );
+  artPieces.map(img => img.locationFullSize = "./img/"+img.locationFullSize);
+  console.log(window.location.pathname)
   const homeImage = artPieces[Math.floor(Math.random()*artPieces.length)];
-  console.log(homeImage);
 
   return (
       <BrowserRouter basename={window.location.pathname || ''}>     

@@ -7,8 +7,8 @@ export default function Products ({products}) {
     <Row className="justify-content-md-center">
       { products.map( product => 
         <Col md='auto'>
-            <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src={product.location} />
+            <Card style={{ width: '18rem' }} >
+              <Card.Img  key={product.id}  variant="top" src={product.location} />
               <Card.Body>
               <Card.Text>
                 <pre>

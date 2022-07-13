@@ -6,9 +6,8 @@ export default function S180x120 ({images}) {
     <div className="container">
       <div className="row">
        {images.map(image => ( image.size === "180x120" ?
-        (<div key={image.id} className="col-6" >
-        {/* <img className='img-fluid' src={image.location}  alt='' /> */}
-         <ModalImage
+        (<div key={image.id} className="col-6">
+         <ModalImage 
            small={image.location}
            large={image.locationFullSize}
            alt={image.title}
