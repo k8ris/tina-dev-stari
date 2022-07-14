@@ -1,6 +1,6 @@
 body {
     padding-bottom: 50px;
-}
+font-family: 'Courier New', Courier, monospace;}
 nav {
     margin-bottom: 5%;
     
@@ -18,16 +18,19 @@ nav {
 .home-img{
     border: 1px solid rgba(96, 175, 171, 0.788);
 }
-.title-paintings{
+/* .title-paintings{
     text-align: center;
     margin-top: 0.5em;
     margin-bottom: 1em;
     font-family: cursive;
     font-size: small;
     color:  rgb(48, 41, 31);
-}
+} */
 .container-paintings:hover{
     opacity:0.8;
+}
+.container-paintings {
+    margin-bottom: 25px;
 }
 .title{
     text-align: left;

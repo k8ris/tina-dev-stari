@@ -11,10 +11,8 @@ export default function Products ({products}) {
               <Card.Img variant="top" src={product.location} />
               <Card.Body>
               <Card.Text>
-
                 {product.typeClothe}{'\n'}
                 {product.price}rsd
-                
               </Card.Text>
               <div>
                 <form>
