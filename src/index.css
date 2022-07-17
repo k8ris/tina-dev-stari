@@ -29,8 +29,12 @@ nav {
 .container-paintings:hover{
     opacity:0.8;
 }
-.container-paintings {
+.container-paintings{
     margin-bottom: 25px;
+}
+.container-popup{
+    margin-bottom: 25px;
+
 }
 .title{
     text-align: left;
