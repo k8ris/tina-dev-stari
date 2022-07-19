@@ -1,7 +1,8 @@
 module.exports = () => { 
   const art=[
   { id:'1',type: 'painting',size: '180x120',title: 'Spring1', year: '2020', technique: 'Acrilic',location: 'img1.jpeg',locationFullSize:'img1FS.jpeg'},
-  { id:'2',type: 'painting',size: '180x120',title: 'Spring2', year: '2021', technique: 'Acrilic',location: 'img2.jpeg',locationFullSize:'img2FS.jpeg'},    { id:'3',type: 'painting',size: '140x90',title: 'Fanovi kraljice gabora', year: '2022', technique: 'Oil',location: 'img6.jpeg',locationFullSize:'img6FS.jpeg'},
+  { id:'2',type: 'painting',size: '180x120',title: 'Spring2', year: '2021', technique: 'Acrilic',location: 'img2.jpeg',locationFullSize:'img2FS.jpeg'},   
+  { id:'3',type: 'painting',size: '140x90',title: 'Fanovi kraljice gabora', year: '2022', technique: 'Oil',location: 'img6.jpeg',locationFullSize:'img6FS.jpeg'},
   { id:'4',type: 'painting',size: '140x90',title: 'Ljubavnici', year: '2020', technique: 'Oil',location: 'img9.jpeg',locationFullSize:'img9FS.jpeg'},
   { id:'6',type: 'painting',size: '140x90',title: 'Ljubavnici', year: '2020', technique: 'Oil',location: 'img7.jpeg',locationFullSize:'img7FS.jpeg'},
   { id:'7',type: 'painting',size: '140x90',title: 'Ljubavnici', year: '2020', technique: 'Oil',location: 'img8.jpeg',locationFullSize:'img8FS.jpeg'},

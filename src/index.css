@@ -1,13 +1,15 @@
 body {
     padding-bottom: 50px;
-font-family: 'Courier New', Courier, monospace;}
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+    
 nav {
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     
 }
 .layout-link{
     color: black;
-    font-size: small;
     padding: 0.5em;
     text-decoration: none;
 }
@@ -43,13 +45,16 @@ nav {
     font-size: small;
     color:  rgb(48, 41, 31);
 }
-.bioPage{
+/* .bioPage{
   background-image: url("/public/imgFullSize/bio-image.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 .card {
     border: 0px;
 }
+/* .imgBio{
+    width: 300px;
+} */

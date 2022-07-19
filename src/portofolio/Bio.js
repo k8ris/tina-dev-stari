@@ -3,15 +3,18 @@ import React from 'react';
 export default function Bio ({images}) {
   const locationBioImage= images.filter((image) => image.type === 'bio-image' ? image : '')[0].location;
   return (
-    <div className='bioPage'>
-    {/* <img src ={locationBioImage} alt="slika" className='img-fluid center-block d-block mx-auto'/> */}
-      <pre>
-      Tina Danilović{'\n'}
-      tinolinaradulovic@gmail.com{'\n'}
-      tinolina_art, instagram profil{'\n'}
-      +381621803862 {'\n'}
-
-      Rođena u Beogradu 1984. godine.{'\n'} 
+    <div className='container'>
+      <div className="row">
+        <div className="col-md-6 col-sm-12" >
+        Tina Danilović
+        tinolinaradulovic@gmail.com
+        tinolina_art, instagram profil
+        +381621803862
+        </div>
+        <div className="col-md-6 col-sm-12">
+          <img src ={locationBioImage} alt="slika" className='imgBio'/>
+        </div>  
+      {/* Rođena u Beogradu 1984. godine.{'\n'} 
 
       Diplomirala na Fakultetu primenjenih umetnosti u Beogradu 2012. godine na odseku zidno slikarstvo. {'\n'}
 
@@ -48,8 +51,8 @@ export default function Bio ({images}) {
       2015 – Otvoreni mesec galerije Štab, grupna izložba, Galerija Štab, Beograd{'\n'}
       2015 – Mladi 2015, grupna izložba, Niš art fondacija, Beograd-Niš{'\n'}
       2012 – Prasak, grupna izložba mladih umetnika, Kraljevo{'\n'}
-      2011 – Bijenale studentskog crteža Srbije, Galerija Dom kulture Studentski grad, Beograd
-      </pre>
+      2011 – Bijenale studentskog crteža Srbije, Galerija Dom kulture Studentski grad, Beograd */}
+      </div>
     </div>
   )
 }
